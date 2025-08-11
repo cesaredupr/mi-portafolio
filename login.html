@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Básico</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-4-desktop">
+                    <h1 class="title has-text-centered">Iniciar Sesión</h1>
+                    <form>
+                        <div class="field">
+                            <label class="label">Correo electrónico</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="email" placeholder="ejemplo@correo.com" required>
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Contraseña</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="password" placeholder="********" required>
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field is-flex is-justify-content-space-between is-align-items-center">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Recuérdame
+                            </label>
+                            <a href="#" class="is-size-7">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        <div class="field">
+                            <button class="button is-link is-fullwidth">Iniciar Sesión</button>
+                        </div>
+                        <div class="field">
+                            <a href="#" class="button is-light is-fullwidth">Crear Cuenta</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<footer class="footer has-text-centered has-background-light p-4">
+    <div class="content">
+        <p>
+            <strong>Login Básico</strong> por <a href="#">César Paredes</a>.<br>
+            <small>© <span id="year"></span> Todos los derechos reservados.</small><br>
+            <small><a href="https://www.umg.edu.gt/">Universidad Mariano Gálvez de Guatemala</a></small>
+        </p>
+    </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+</footer>
+</body>
+</html>
